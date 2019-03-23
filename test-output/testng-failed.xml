@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="driver" value="chrome"/>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="tests.Master">
+        <methods>
+          <include name="test001" invocation-numbers="0 1"/>
+          <include name="test002"/>
+          <include name="test003"/>
+          <include name="test004"/>
+          <include name="test005"/>
+          <include name="test006"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.Master -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

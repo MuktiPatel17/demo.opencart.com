@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="driver" value="chrome"></parameter> <!-- ye parameter h jo suit node ke andar likha h means wo ye suit node ke andar hi accessible hoga
+	ab ye parameter simply name aur value define karta h. ye parameter classes me retrieve kar sakte h
+	ye parameter maine rakha h to decide konse browser ka driver initialise karneka wo decide karne ke liye 
+	
+	 -->
+	<test thread-count="5" name="Test"><!-- ye ek test h jiske andar classes and uske andar methods h. are you clear with this hierarchy yes. fine then
+	i wont spend more time on this basically you can have multiple test nodes inside a suit, multiple classes inside  a test and multiple methods inside  a class
+	now lets see how to access the parameter
+	as i said its scope is within this suit only
+	-->
+		<classes>
+<!-- 			<class name="tests.SetUp" /> -->
+			<class name="tests.Master" />
+			<class name="tests.Category" />
+			<class name="tests.Product" />
+			<class name="tests.Search" />
+			<class name="tests.Register" />
+			<class name="tests.Login" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

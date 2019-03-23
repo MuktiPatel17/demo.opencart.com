@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.Login">
+        <methods>
+          <include name="test001"/>
+        </methods>
+      </class> <!-- tests.Login -->
+      <class name="tests.Search">
+        <methods>
+          <include name="test001"/>
+        </methods>
+      </class> <!-- tests.Search -->
+      <class name="tests.Category">
+        <methods>
+          <include name="test001"/>
+          <include name="test004"/>
+          <include name="test003"/>
+          <include name="test002"/>
+        </methods>
+      </class> <!-- tests.Category -->
+      <class name="tests.Register">
+        <methods>
+          <include name="test002"/>
+          <include name="test001"/>
+        </methods>
+      </class> <!-- tests.Register -->
+      <class name="tests.Master">
+        <methods>
+          <include name="test001"/>
+          <include name="test002"/>
+          <include name="test003"/>
+          <include name="test004"/>
+          <include name="test005"/>
+          <include name="test006"/>
+        </methods>
+      </class> <!-- tests.Master -->
+      <class name="tests.Product">
+        <methods>
+          <include name="test001"/>
+        </methods>
+      </class> <!-- tests.Product -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
